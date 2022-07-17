@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".CadastroRefeicaoActivity">
+
+    <TextView
+        android:id="@+id/textViewEstaDeDieta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewApelidoRefeicao"
+        android:text="@string/textView_esta_de_dieta" />
+
+    <TextView
+        android:id="@+id/textViewTipoRefeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewApelidoRefeicao"
+        android:layout_marginBottom="20dp"
+        android:text="@string/texto_tipo_refeicao" />
+
+    <TextView
+        android:id="@+id/textViewApelidoRefeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroupStatusDieta"
+        android:layout_marginBottom="12dp"
+        android:text="@string/apelido_refeicao" />
+
+    <ListView
+        android:id="@+id/listViewAlimento"
+        android:layout_width="match_parent"
+        android:layout_height="649dp"
+        android:layout_marginBottom="157dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupStatusDieta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textViewEstaDeDieta"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignParentBottom="true"
+
+        tools:layout_editor_absoluteY="279dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonStatusDietaSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/botaoCadastrarRefeicao"
+            android:text="@string/sim"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonStatusDietaNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/botaoCadastrarRefeicao"
+            android:layout_toRightOf="@+id/radioButtonStatusDietaSim"
+            android:text="@string/nao"
+
+            tools:layout_editor_absoluteX="0dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextApelidoRefeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroupStatusDieta"
+
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@+id/textViewApelidoRefeicao"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/botaoHorario"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/textViewApelidoRefeicao"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@+id/spinnerTipoRefeicao"
+        android:width="300dp"
+        android:height="100dp"
+        android:onClick="ajustarHorarioRefeicao"
+        android:text="@string/horario"
+        android:textSize="10sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPrimeiraRefeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@+id/radioGroupStatusDieta"
+        android:text="@string/primeira_refeicao_do_dia" />
+
+    <Spinner
+        android:id="@+id/spinnerTipoRefeicao"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/textViewApelidoRefeicao"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/textViewTipoRefeicao" />
+
+</RelativeLayout>

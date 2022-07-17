@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewRorarioRefeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refeicaoTextview"
+        android:layout_toRightOf="@+id/textViewHorario"
+        android:text="@string/horario_de_cada_refeicao"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/calorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHorario"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/calorias_refeicao"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/refeicaoTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/refeicao"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refeicaoTextview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:text="@string/horario_refeicao"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewTotalCaloriasRefeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHorario"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/calorias"
+        android:text="@string/zero"
+        android:textSize="18sp" />
+
+</RelativeLayout>

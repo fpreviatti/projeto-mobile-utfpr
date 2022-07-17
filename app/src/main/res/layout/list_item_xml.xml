@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/quantidade_porcao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calorias"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/alimento_imageview"
+        android:text="@string/quantidade"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/calorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHorario"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/alimento_imageview"
+        android:text="@string/calorias_1_quantidade"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/alimento_imageview"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:src="@drawable/arroz" />
+
+    <TextView
+        android:id="@+id/refeicaoTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/alimento_imageview"
+        android:text="@string/carboidratos"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refeicaoTextview"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/alimento_imageview"
+        android:text="@string/arroz"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/botaoAdicionarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantidade_porcao"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/adicionar" />
+
+    <Button
+        android:id="@+id/botaoRemoverId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantidade_porcao"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/botaoAdicionarId"
+        android:layout_toRightOf="@+id/botaoAdicionarId"
+        android:text="@string/remover" />
+
+    <TextView
+        android:id="@+id/textViewQuantidadeItensId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calorias"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/quantidade_porcao"
+        android:text="@string/zero"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewTotalCaloriasRefeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewHorario"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/calorias"
+        android:text="@string/zero"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewMetricaQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calorias"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textViewQuantidadeItensId"
+        android:text="@string/unidade"
+        android:textSize="18sp" />
+
+</RelativeLayout>

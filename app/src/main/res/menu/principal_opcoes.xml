@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menuItemAdicionar"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/adicionar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemSobre"
+        android:title="@string/sobre"
+        />
+
+
+    <group
+        android:id="@+id/groupTemas"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menuItemModoClassico"
+            android:title="@string/tema_classico"
+            />
+    <item
+        android:id="@+id/menuItemModoNoturno"
+        android:title="@string/tema_noturno"
+        />
+
+        </group>
+
+</menu>
