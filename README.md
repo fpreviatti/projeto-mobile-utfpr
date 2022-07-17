@@ -2,4 +2,4 @@
 
 Tema do projeto: aplicativo para Controle de consumo de calorias diárias.
 
-<img src="https://github.com/fpreviatti/projeto-mobile-utfpr/apresentacao.jpg" height="auto">
+<img src="https://github.com/fpreviatti/projeto-mobile-utfpr/apresentacao.png" height="auto">
